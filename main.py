@@ -3,6 +3,10 @@ def main():
 
     with open(path_to_file) as file:
         file_contents = file.read()
-        print(file_contents)
+        print(count_words(file_contents))
+
+def count_words(string):
+    words = string.split()
+    return len(words)
 
 main()
